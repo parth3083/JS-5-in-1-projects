@@ -1,12 +1,19 @@
 let istatus = document.querySelector("#status");
 let add = document.querySelector("#add");
-let remove = document.getElementById("remove");
+var flag = 0;
 
 add.addEventListener("click", function () {
-    istatus.innerHTML = "Friends";
-    istatus.style.color = "green";
-});
-remove.addEventListener("click", function () {
-    istatus.innerHTML = "Stranger";
-    istatus.style.color = "red";
+    if (flag == 0) {
+        istatus.innerHTML = "Friends";
+        istatus.style.color = "green";
+        add.innerHTML = "Remove Friend";
+        flag = 1;
+    }
+    else {
+        istatus.innerHTML = "Stranger";
+        istatus.style.color = "red";
+        add.innerHTML = "Add Friend";
+        flag = 0;
+    }
+
 });

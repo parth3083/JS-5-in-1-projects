@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: General Sans;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    position: relative;
+}
+.elem{
+    width: 100%;
+    height: 120px;
+     border-bottom: 2px solid white;
+     display:flex;
+     align-items: center;
+     justify-content: flex-start;
+}
+.elem h1{
+    font-size: 4vw;
+}
+.elem img{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    /* transform: translate(-50%,-50%); */
+    transition: all linear 0.1s;
+}
